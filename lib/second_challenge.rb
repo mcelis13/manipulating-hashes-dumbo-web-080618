@@ -6,6 +6,7 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  newArray = groceries.values.map {|array| array.concat(array)}
+  newArray = []
+  groceries.values.each {|array| newArray.concat(array)}
   newArray
 end
